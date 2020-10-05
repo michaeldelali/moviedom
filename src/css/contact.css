@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: rgb(230, 225, 225);
+}
+.layout-center {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.wrapper {
+  font: 300 16px/24px 'Roboto', sans-serif;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+.header-wrap {
+  background: #58ade7;
+  padding: 10px;
+}
+.header-wrap .layout-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.header-wrap .branding {
+  width: 25%;
+}
+.header-wrap .branding img {
+  display: block;
+  width: 150px;
+}
+.header-wrap .menu {
+  width: 75%;
+}
+.header-wrap .menu ul {
+  text-align: right;
+}
+.header-wrap .menu ul li {
+  display: inline-block;
+}
+.header-wrap .menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.header-wrap .menu ul li a:hover {
+  color: #333;
+}
+
+.map-wrap {
+  width: 100%;
+}
+.map-wrap iframe {
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  position: relative;
+  /* IE needs a   position other than static */
+}
+.map-wrap iframe.clicked {
+  pointer-events: auto;
+}
+
+.content-wrap {
+  padding-bottom: 100px;
+}
+.content-wrap .form-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  box-shadow: 0px 0px 30px #b7b7b7;
+  margin-top: -100px;
+  position: relative;
+  z-index: 10;
+  background: #fff;
+}
+.content-wrap .form-wrap h2.sub-title {
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #1b4874;
+}
+.content-wrap .form-wrap .form-block {
+  box-sizing: border-box;
+  padding: 40px;
+  width: 70%;
+}
+.content-wrap .form-wrap .address-block {
+  background: #103f6e;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 40px;
+  width: 30%;
+}
+.content-wrap .form-wrap .address-block h2.sub-title {
+  color: #fff;
+}
+.content-wrap .form-wrap .address-block ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.content-wrap .form-wrap .address-block ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-item {
+  margin-bottom: 10px;
+  with: 50%;
+}
+.form-item label {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6a7986;
+}
+.form-item input {
+  border: none;
+  border-bottom: 1px solid #dddddd;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.form-item textarea {
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+
+.footer-wrap {
+  background: #fafafb;
+  border-top: 1px solid #f6f6f6;
+  padding: 40px 0;
+}
+.footer-wrap p {
+  text-align: center;
+  color: #95a2b4;
+}
